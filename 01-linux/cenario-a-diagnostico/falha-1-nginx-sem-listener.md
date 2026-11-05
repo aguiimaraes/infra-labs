@@ -1,6 +1,9 @@
-# Relatório de Incidente — Falha 1: nginx sem servidor configurado
+# Relatório de Incidente - Falha 1: nginx sem servidor configurado
 
-**Ambiente:** Ubuntu Server LTS (VM `lab-linux`, 1 vCPU / 1 GB RAM) — Lab 1, Cenário A
+> **Status: v1 - VM Ubuntu (lab-linux, 28/10/2026).** O Cenário A está sendo
+> reexecutado na Rocky Linux; este relatório será substituído pela versão final.
+
+**Ambiente:** Ubuntu Server LTS (VM `lab-linux`, 1 vCPU / 1 GB RAM) - Lab 1, Cenário A
 **Data:** 28/10/2026
 **Serviço afetado:** `nginx.service`
 
