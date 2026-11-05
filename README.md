@@ -6,10 +6,12 @@ Laboratórios práticos de infraestrutura: Linux, redes, identidade, PowerShell 
 
 | Lab | Escopo | Status |
 |---|---|---|
-| [01-linux](01-linux/) | Servidor Linux, diagnósticos e hardening | 🚧 em andamento (Cenário A) |
-| 02-powershell-git | Inventário de parque e automação | 🗓 planejado (nov/2026) |
-| 03-ad-hibrido | Active Directory + Entra ID | 🗓 planejado (dez/2026) |
-| 07-docker-nginx | Docker, TLS e proxy reverso | 🗓 planejado (abr/2027) |
+| [01-linux](01-linux/) | Servidor Linux, diagnósticos e hardening | 🚧 em andamento — fechando até 06/12/2026 |
+| 02-powershell-git | Inventário de parque e automação | 🗓 jan/2027 |
+| 03-ad-hibrido | Active Directory + Entra ID | 🗓 fev/2027 |
+| 07-docker-nginx | Docker, TLS e proxy reverso | 🗓 mai/2027 |
+
+> Cronograma (ajustado em 05/11/2026): jan/2027 também concentra ITIL, SC-900 e Bloco C do curso de Linux; fev/2027 soma MySQL, lab curto de Azure e checkpoint da AZ-104. Pausa de 07/12/2026 a 08/01/2027 (férias).
 
 ## Lab 01 — Linux
 
@@ -26,11 +28,11 @@ Servidor web de intranet em Nginx, com seis falhas provocadas e resolvidas uma a
 | 5 | Firewall bloqueando (`ufw`) | 🗓 |
 | 6 | Nome não resolve (`hosts`, DNS) | 🗓 |
 
-**Ambiente:** Ubuntu Server LTS (VM dedicada, 1 vCPU / 1 GB RAM) · acesso remoto por SSH · snapshot antes de cada risco
+**Ambiente:** RockyLinux (VM Hyper-V, 1 vCPU / 1 GB RAM, rede interna com IP fixo) · acesso remoto por SSH · snapshot antes de cada risco
 
 ### Cenário B: "Servidor novo para a filial" (construção e proteção)
 
-Servidor de filial do zero: usuários por grupo, SSH só por chave, firewall restritivo, LVM, backup com rsync e rotina de saúde em Bash. 🗓 planejado
+Servidor de filial do zero: usuários por grupo, SSH só por chave, firewall restritivo, LVM, backup com rsync e rotina de saúde em Bash. 🚧 próximo — parte do fechamento do Lab 01 até 06/12/2026
 
 ## Estrutura
 
