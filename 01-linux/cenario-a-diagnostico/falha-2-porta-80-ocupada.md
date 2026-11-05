@@ -1,9 +1,6 @@
 # Relatório de Incidente — Falha 2: porta 80 ocupada
 
-> **Status: v1 — VM Ubuntu (lab-linux, 27–28/10/2026).** O Cenário A está sendo reexecutado
-> na Rocky Linux; este relatório será substituído pela versão final da reexecução.
-
-**Ambiente:** Ubuntu Server LTS (VM `lab-linux`, 1 vCPU / 1 GB RAM) — Lab 1, Cenário A
+**Ambiente:** RockyLinux (VM `lab-linux`, 1 vCPU / 1.5 GB RAM) — Lab 1, Cenário A
 **Data:** 27–28/10/2026
 **Serviço afetado:** `nginx.service`
 **Duração:** ~40 min (sintoma notado às 00:36 UTC de 28/10)

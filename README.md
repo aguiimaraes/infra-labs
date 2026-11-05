@@ -21,16 +21,14 @@ Servidor web de intranet em Nginx, com seis falhas provocadas e resolvidas uma a
 
 | Falha | Tema | Relatório |
 |---|---|---|
-| 1 | Configuração do Nginx sem servidor ativo (`nginx -t`, `nginx -T`, `conf.d`) | [falha-1-nginx-sem-listener.md](01-linux/cenario-a-diagnostico/falha-1-nginx-sem-listener.md) *(v1 — Ubuntu, será reescrita)* |
-| 2 | Porta 80 ocupada por outro servidor web (`httpd` antagonista) | [falha-2-porta-80-ocupada.md](01-linux/cenario-a-diagnostico/falha-2-porta-80-ocupada.md) *(v1 — Ubuntu, será reescrita)* |
-| 3 | Erro 403 por permissão (`chmod`/`chown` + SELinux) | 🗓 |
+| 1 | Nginx sem servidor configurado (`sites-enabled` vazio, `nginx -t` sem sudo) | [falha-1-nginx-sem-listener.md](01-linux/cenario-a-diagnostico/falha-1-nginx-sem-listener.md) |
+| 2 | Porta 80 ocupada pelo `httpd` do pacote Snap do Nextcloud | [falha-2-porta-80-ocupada.md](01-linux/cenario-a-diagnostico/falha-2-porta-80-ocupada.md) |
+| 3 | Erro 403 por permissão (`ls -l`, `chmod`, `chown`) | 🗓 |
 | 4 | Disco cheio por log (`df -h`, `du -sh`, `logrotate`) | 🗓 |
-| 5 | Firewall bloqueando (`firewalld`) | 🗓 |
+| 5 | Firewall bloqueando (`ufw`) | 🗓 |
 | 6 | Nome não resolve (`hosts`, DNS) | 🗓 |
 
-> As Falhas 1 e 2 foram resolvidas primeiro na VM Ubuntu (`lab-linux`) — relatórios v1 já publicados. O Cenário A completo está sendo **reexecutado na Rocky Linux**, onde os relatórios finais serão reescritos com os diagnósticos da distro RHEL (dnf, firewalld, SELinux, nginx em `conf.d`).
-
-**Ambiente:** Rocky Linux (VM Hyper-V, 1 vCPU / 1 GB RAM, rede interna `LabSwitch` com IP fixo) · SELinux · firewalld · acesso remoto por SSH · snapshot antes de cada risco
+**Ambiente:** Ubuntu Server LTS (VM `lab-linux`, Hyper-V, 1 vCPU / 1 GB RAM) · acesso remoto por SSH · snapshot antes de cada risco
 
 ### Cenário B: "Servidor novo para a filial" (construção e proteção)
 
