@@ -24,7 +24,7 @@ Servidor web de intranet em Nginx, com seis falhas provocadas e resolvidas uma a
 | 1     | Nginx sem servidor configurado (`sites-enabled` vazio, `nginx -t` sem sudo) | [falha-1-nginx-sem-listener.md](01-linux/cenario-a-diagnostico/falha-1-nginx-sem-listener.md) |
 | 2     | Porta 80 ocupada pelo `httpd` do pacote Snap do Nextcloud                   | [falha-2-porta-80-ocupada.md](01-linux/cenario-a-diagnostico/falha-2-porta-80-ocupada.md)     |
 | 3     | Erro 403 por permissão (`ls -l`, `chmod`, `chown`)                          | [falha-3-403-permissao.md](01-linux/cenario-a-diagnostico/falha-3-403-permissao.md)           |
-| 4     | Disco cheio por log (`df -h`, `du -sh`, `logrotate`)                        | 🗓                                                                                            |
+| 4     | Disco cheio por log (`df -h`, `du -sh`, `logrotate`)                        | [falha-4-disco-cheio.md](01-linux/cenario-a-diagnostico/falha-4-disco-cheio.md)               |
 | 5     | Firewall bloqueando (`ufw`)                                                 | 🗓                                                                                            |
 | 6     | Nome não resolve (`hosts`, DNS)                                             | 🗓                                                                                            |
 
