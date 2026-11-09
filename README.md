@@ -26,7 +26,7 @@ Servidor web de intranet em Nginx, com seis falhas provocadas e resolvidas uma a
 | 3     | Erro 403 por permissão (`ls -l`, `chmod`, `chown`)                          | [falha-3-403-permissao.md](01-linux/cenario-a-diagnostico/falha-3-403-permissao.md)           |
 | 4     | Disco cheio por log (`df -h`, `du -sh`, `logrotate`)                        | [falha-4-disco-cheio.md](01-linux/cenario-a-diagnostico/falha-4-disco-cheio.md)               |
 | 5     | Firewall bloqueando (`ufw`)                                                 | [falha-5-firewall.md](01-linux/cenario-a-diagnostico/falha-5-firewall.md)                     |
-| 6     | Nome não resolve (`hosts`, DNS)                                             | 🗓                                                                                            |
+| 6     | Nome não resolve (`hosts`, DNS)                                             | [falha-6-nome-nao-resolve.md](01-linux/cenario-a-diagnostico/falha-6-nome-nao-resolve.md)     |
 
 **Ambiente:** Ubuntu Server LTS (VM `lab-linux`, Hyper-V, 1 vCPU / 1 GB RAM) · acesso remoto por SSH · snapshot antes de cada risco
 
