@@ -36,7 +36,7 @@ Servidor web de intranet em Nginx, com seis falhas provocadas e resolvidas uma a
 
 **Ambiente:** Ubuntu Server LTS (VM `lab-linux`, Hyper-V, 1 vCPU / 1 GB RAM) · acesso remoto por SSH · snapshot antes de cada risco
 
-**Dia caos:** as 6 falhas em ordem aleatória, sem consultar o diário — 6/6 em 27min30s (12/11/2026).
+**Dia caos:** [as 6 falhas em ordem aleatória, sem consultar o diário](01-linux/cenario-a-diagnostico/dia-caos-ensaiado.md) — 6/6 em 27min30s (12/11/2026).
 
 ### Cenário B: "Servidor novo para a filial" (construção e proteção)
 
@@ -46,10 +46,12 @@ Servidor de filial do zero: usuários por grupo, SSH só por chave, firewall res
 
 ```
 infra-labs/
-├── README.md                        # este índice
+├── README.md                    # índice: status, metodologia e links
 └── 01-linux/
-    └── cenario-a-diagnostico/       # relatórios de incidente (1 página cada)
+    └── cenario-a-diagnostico/   # 6 relatórios de incidente + dia do caos
 ```
+
+Cada novo laboratório entra como pasta numerada (`NN-lab/`) com README próprio e uma subpasta por cenário — `cenario-a-...`, `cenario-b-...` — para o recrutador navegar sem abrir níveis demais.
 
 ## Metodologia
 
