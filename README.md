@@ -6,10 +6,16 @@ Laboratórios práticos de infraestrutura: Linux, redes, identidade, PowerShell 
 
 | Lab | Escopo | Status |
 |---|---|---|
-| [01-linux](01-linux/) | Servidor Linux, diagnósticos e hardening | 🚧 em andamento — fechando até 06/12/2026 |
+| [01-linux](01-linux/) | Servidor Linux, diagnósticos e hardening | 🚧 em andamento — Cenário A concluído; Cenário B até 06/12/2026 |
 | 02-powershell-git | Inventário de parque e automação | 🗓 jan/2027 |
 | 03-ad-hibrido | Active Directory + Entra ID | 🗓 fev/2027 |
-| 07-docker-nginx | Docker, TLS e proxy reverso | 🗓 mai/2027 |
+| 04-ad-sso | Acesso condicional, MFA e SSO | 🗓 abr/2027 |
+| 05-vpn-azure | VPN site-to-site MikroTik ↔ Azure | 🗓 abr/2027 |
+| 06-python-api | Python, APIs REST e Microsoft Graph | 🗓 abr a jun/2027 |
+| 07-docker-nginx | Docker, TLS, proxy reverso e Container Apps | 🗓 mai a jul/2027 |
+| 08-monitoramento | Prometheus, Grafana e Azure Monitor | 🗓 ago a set/2027 |
+| 09-kubernetes | Kubernetes local (k3s) | 🗓 set a out/2027 |
+| 10-segunda-trilha | Certificação: SC-300 ou AZ-800/801 | 🗓 abr a out/2027 |
 
 > Cronograma (ajustado em 05/11/2026): jan/2027 também concentra ITIL, SC-900 e Bloco C do curso de Linux; fev/2027 soma MySQL, lab curto de Azure e checkpoint da AZ-104. Pausa de 07/12/2026 a 08/01/2027 (férias).
 
@@ -29,6 +35,8 @@ Servidor web de intranet em Nginx, com seis falhas provocadas e resolvidas uma a
 | 6     | Nome não resolve (`hosts`, DNS)                                             | [falha-6-nome-nao-resolve.md](01-linux/cenario-a-diagnostico/falha-6-nome-nao-resolve.md)     |
 
 **Ambiente:** Ubuntu Server LTS (VM `lab-linux`, Hyper-V, 1 vCPU / 1 GB RAM) · acesso remoto por SSH · snapshot antes de cada risco
+
+**Dia caos:** as 6 falhas em ordem aleatória, sem consultar o diário — 6/6 em 27min30s (12/11/2026).
 
 ### Cenário B: "Servidor novo para a filial" (construção e proteção)
 
